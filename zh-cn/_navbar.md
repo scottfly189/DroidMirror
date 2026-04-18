@@ -1,24 +1,10 @@
-* [使用指南](/guide/)
-* [⬇️ 下载](/download.md)
-* [💰 价格](/pricing.md)
-* [📬 联系我们](/contact.md)
+<!-- _navbar.md -->
 
-<!-- 右侧功能区 -->
-* <div style="display:flex;align-items:center;gap:12px;">
-
-  <!-- 🌗 主题切换 -->
-  <button onclick="toggleTheme()" style="cursor:pointer;padding:4px 8px;">
-    🌗
-  </button>
-
-  <!-- 🌍 语言选择 -->
-  <select onchange="switchLang(this.value)" style="padding:4px;">
-    <option value="en">English</option>
-    <option value="zh-CN">简体中文</option>
-    <option value="zh-TW">繁體中文</option>
-    <option value="ja">日本語</option>
-    <option value="ko">한국어</option>
-    <!-- 你可以继续扩展到19种 -->
-  </select>
-
-</div>
+* [使用指南](/zh-cn/README.md)
+* [下载](/zh-cn/download.md)
+* [价格](/zh-cn/price.md)
+* :globe_with_meridians: 语言
+  * [English](/)
+  * [简体中文](/zh-cn/)
+  * [中國香港](/zh-hk/)
+  * [台灣](/zh-tw/)
