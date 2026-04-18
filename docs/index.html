@@ -54,6 +54,7 @@
 <body>
   <div id="app"></div>
   <script>
+    var isGitHub = location.hostname.includes('github.io');
     window.$docsify = {
       name: '<img src="/_media/logo.png" style="width:50%;margin:-30px 0 0 0 ;padding:0;line-height:0;"></img><b><p style="margin:0; padding:0; letter-spacing: 0.03em; font-family: "Poppins","Montserrat",sans-serif;font-weight: 800;">DroidMirror</p></b> <small>Screen Mirroring and Control</small><hr style="border: none; border-top: 1px solid #ccc;"/>',
       repo: 'https://github.com/scottfly189/DroidMirror',
@@ -62,7 +63,10 @@
       maxLevel: 2,
       // auto2top: true,
       routerMode: 'history',
-      loadNavbar: true
+      loadNavbar: true,
+      basePath: isGitHub
+      ? '/DroidMirror/'
+      : '/'
     }
   </script>
   <!-- Docsify v4 -->
