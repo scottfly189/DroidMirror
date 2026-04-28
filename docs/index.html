@@ -59,7 +59,7 @@
 </head>
 
 <body>
-  <div id="app"></div>
+  <div id="app">Loading...</div>
   <script>
     var isGitHub = location.hostname.includes('github.io');
     window.$docsify = {
@@ -70,11 +70,11 @@
       onlyCover: true,
       maxLevel: 2,
       // auto2top: true,
-      routerMode: 'history',
+      // routerMode: 'history',
       loadNavbar: true,
-      basePath: isGitHub
-        ? '/DroidMirror/'
-        : '/',
+      // basePath: isGitHub
+      //   ? '/DroidMirror/'
+      //   : '/',
     }
 
     window.$docsify.plugins = (window.$docsify.plugins || []).concat([
@@ -95,7 +95,7 @@
   <!-- 实现离线化 -->
   <script>
     if (typeof navigator.serviceWorker !== 'undefined') {
-      navigator.serviceWorker.register('pwa.js')
+      navigator.serviceWorker.register('sw.js')
     }
   </script>
 </body>
